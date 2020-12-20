@@ -22,7 +22,6 @@ class MySQLHandlerForLaravelQueryBuilderServiceProvider extends ServiceProvider
     public function boot(MySQLHandlerForLaravelQueryBuilder $handler): void
     {
         $handler->initHandlerMethodsForQueryBuilder();
-        dd($this->app->mysqlhandlerforlaravelquerybuilder);
     }
 
     /**
