@@ -1,0 +1,41 @@
+{
+    "name": "dda58/mysqlhandlerforlaravelquerybuilder",
+    "description": "Allow use MySQL handlers for Laravel query builder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitrii Denisov",
+            "email": "dda58denisov@gmail.com",
+            "homepage": "https://github.com/DDA58"
+        }
+    ],
+    "homepage": "https://github.com/dda58/mysqlhandlerforlaravelquerybuilder",
+    "keywords": ["Laravel", "MySQLHandlerForLaravelQueryBuilder"],
+    "require": {
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DDA58\\MySQLHandlerForLaravelQueryBuilder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DDA58\\MySQLHandlerForLaravelQueryBuilder\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DDA58\\MySQLHandlerForLaravelQueryBuilder\\MySQLHandlerForLaravelQueryBuilderServiceProvider"
+            ],
+            "aliases": {
+                "MySQLHandlerForLaravelQueryBuilder": "DDA58\\MySQLHandlerForLaravelQueryBuilder\\Facades\\MySQLHandlerForLaravelQueryBuilder"
+            }
+        }
+    }
+}
