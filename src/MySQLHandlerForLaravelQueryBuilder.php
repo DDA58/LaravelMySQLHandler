@@ -25,17 +25,17 @@ class MySQLHandlerForLaravelQueryBuilder
 	/**
 	* @var array      
 	*/     
-	private $allowedComparisonSymbols = ['=' , '<=' , '>=' , '<' ,' >'];
+	private $allowedComparisonSymbols = ['=', '<=', '>=', '<', '>'];
 
 	/**
 	* @var array      
 	*/   
-	private $allowedKeyWordsForIndex = ['FIRST' , 'NEXT' , 'PREV' , 'LAST'];
+	private $allowedKeyWordsForIndex = ['FIRST', 'NEXT', 'PREV', 'LAST'];
 
 	/**
 	* @var array      
 	*/    
-	private $allowedKeyWordsForHandler = ['FIRST' , 'NEXT'];   
+	private $allowedKeyWordsForHandler = ['FIRST', 'NEXT'];   
 
 	/**      
 	* MySQLHandlerForLaravelQueryBuilder constructor.      

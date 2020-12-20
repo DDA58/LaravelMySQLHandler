@@ -22,11 +22,7 @@ class MySQLHandlerForLaravelQueryBuilderServiceProvider extends ServiceProvider
     public function boot(MySQLHandlerForLaravelQueryBuilder $handler): void
     {
         $handler->initHandlerMethodsForQueryBuilder();
-        // Publishing is only necessary when using the CLI.
-        if ($this->app->runningInConsole()) {
-            $this->bootForConsole();
-        }
-
+        dd($this->app->mysqlhandlerforlaravelquerybuilder);
     }
 
     /**
@@ -44,19 +40,8 @@ class MySQLHandlerForLaravelQueryBuilderServiceProvider extends ServiceProvider
             return new MySQLHandlerForLaravelQueryBuilder($app->make(MySQLHandlerRepositoryContract::class));
         });
 
-        // Register the service the package provides.
         $this->app->singleton('mysqlhandlerforlaravelquerybuilder', function ($app) {
-            return new MySQLHandlerForLaravelQueryBuilder;
+            return $app->make(MySQLHandlerForLaravelQueryBuilder::class);
         });
-    }
-
-    /**
-     * Console-specific booting.
-     *
-     * @return void
-     */
-    protected function bootForConsole(): void
-    {
-        // Publishing the configuration file;
     }
 }
