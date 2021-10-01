@@ -10,8 +10,11 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Package">
-            <directory suffix=".php">./tests/</directory>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
     </testsuites>
     <filter>
@@ -19,4 +22,9 @@
             <directory>src/</directory>
         </whitelist>
     </filter>
+    <php>
+        <server name="APP_ENV" value="testing"/>
+
+        <env name="DB_CONNECTION" value="mysql" />
+    </php>
 </phpunit>
