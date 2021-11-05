@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Container;
+namespace DDA58\LaravelMySQLHandler\Container;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IBuilder;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IBuilder;
 use Illuminate\Database\Query\Builder as DbQueryBuilder;
 use SplObjectStorage;
 
 /**
- * Interface IHandlerRepository
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 interface IHandlerContainer
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\Feature\Services;
+namespace DDA58\LaravelMySQLHandler\Tests\Feature\Services;
 
 use Closure;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IEloquentBuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\ABaseTestCase;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IEloquentBuilder;
+use DDA58\LaravelMySQLHandler\Tests\ABaseTestCase;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 

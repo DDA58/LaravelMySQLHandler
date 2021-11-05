@@ -2,19 +2,18 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Manager;
+namespace DDA58\LaravelMySQLHandler\Services\Manager;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\IHandlerContainer;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IEloquentBuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IBuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IQueryBuilder;
+use DDA58\LaravelMySQLHandler\Container\IHandlerContainer;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IEloquentBuilder;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IBuilder;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IQueryBuilder;
 use Illuminate\Database\Eloquent\Builder as DbEloquentBuilder;
 use Illuminate\Database\Query\Builder as DbQueryBuilder;
 use Closure;
 
 /**
- * class HandlerManager
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 class HandlerManager implements IHandlerManager
 {

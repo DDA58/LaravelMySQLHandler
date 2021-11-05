@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions;
+namespace DDA58\LaravelMySQLHandler\Exceptions;
 
 use InvalidArgumentException;
 
 /**
- * class KeywordNotAllowedWithoutIndexName
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 class KeywordNotAllowedWithoutIndexName extends InvalidArgumentException
 {

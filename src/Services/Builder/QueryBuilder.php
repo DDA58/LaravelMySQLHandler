@@ -2,18 +2,17 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder;
+namespace DDA58\LaravelMySQLHandler\Services\Builder;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\IHandlerContainer;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IQueryBuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Grammar\IGrammar;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Processor\IProcessor;
+use DDA58\LaravelMySQLHandler\Container\IHandlerContainer;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IQueryBuilder;
+use DDA58\LaravelMySQLHandler\Services\Grammar\IGrammar;
+use DDA58\LaravelMySQLHandler\Services\Processor\IProcessor;
 use Illuminate\Database\Query\Builder as DbQueryBuilder;
 use Illuminate\Support\Collection;
 
 /**
- * class QueryBuilder
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 class QueryBuilder extends ABuilder implements IQueryBuilder
 {

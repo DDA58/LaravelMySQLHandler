@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\Unit\Services;
+namespace DDA58\LaravelMySQLHandler\Tests\Unit\Services;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Manager\HandlerManager;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Manager\IHandlerManager;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\ABaseTestCase;
+use DDA58\LaravelMySQLHandler\Services\Manager\HandlerManager;
+use DDA58\LaravelMySQLHandler\Services\Manager\IHandlerManager;
+use DDA58\LaravelMySQLHandler\Tests\ABaseTestCase;
 
 class HandlerManagerUnitTest extends ABaseTestCase
 {

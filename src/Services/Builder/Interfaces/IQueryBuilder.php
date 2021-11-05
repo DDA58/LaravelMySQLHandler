@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces;
+namespace DDA58\LaravelMySQLHandler\Services\Builder\Interfaces;
 
 use Illuminate\Database\Query\Builder as DbQueryBuilder;
 use Illuminate\Support\Collection;
 
 /**
- * Interface IQueryBuilder
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 interface IQueryBuilder extends IBuilder
 {

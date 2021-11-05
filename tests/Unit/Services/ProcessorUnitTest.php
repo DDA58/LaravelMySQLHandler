@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\Unit\Services;
+namespace DDA58\LaravelMySQLHandler\Tests\Unit\Services;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Processor\IProcessor;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Processor\Processor;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\ABaseTestCase;
+use DDA58\LaravelMySQLHandler\Services\Processor\IProcessor;
+use DDA58\LaravelMySQLHandler\Services\Processor\Processor;
+use DDA58\LaravelMySQLHandler\Tests\ABaseTestCase;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Query\Builder as DbBuilder;
 

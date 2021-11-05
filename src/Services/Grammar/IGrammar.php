@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Grammar;
+namespace DDA58\LaravelMySQLHandler\Services\Grammar;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IBuilder;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IBuilder;
 
 /**
- * Interface IGrammar
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 interface IGrammar
 {

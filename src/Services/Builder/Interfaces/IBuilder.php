@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces;
+namespace DDA58\LaravelMySQLHandler\Services\Builder\Interfaces;
 
 interface IBuilder
 {

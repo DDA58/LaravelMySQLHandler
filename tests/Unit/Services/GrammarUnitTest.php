@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\Unit\Services;
+namespace DDA58\LaravelMySQLHandler\Tests\Unit\Services;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\KeywordNotAllowed;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\KeywordNotAllowedForIndexName;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\KeywordNotAllowedWithoutIndexName;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\ABuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Grammar\Grammar;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Grammar\IGrammar;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\ABaseTestCase;
+use DDA58\LaravelMySQLHandler\Exceptions\KeywordNotAllowed;
+use DDA58\LaravelMySQLHandler\Exceptions\KeywordNotAllowedForIndexName;
+use DDA58\LaravelMySQLHandler\Exceptions\KeywordNotAllowedWithoutIndexName;
+use DDA58\LaravelMySQLHandler\Services\Builder\ABuilder;
+use DDA58\LaravelMySQLHandler\Services\Grammar\Grammar;
+use DDA58\LaravelMySQLHandler\Services\Grammar\IGrammar;
+use DDA58\LaravelMySQLHandler\Tests\ABaseTestCase;
 use Illuminate\Database\Query\Builder as DbBuilder;
 use Illuminate\Database\Query\Grammars\Grammar as DbGrammar;
 use PHPUnit\Framework\MockObject\MockObject;

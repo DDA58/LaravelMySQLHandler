@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\Feature\Container;
+namespace DDA58\LaravelMySQLHandler\Tests\Feature\Container;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\HandlerContainer;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\IHandlerContainer;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\HandlerBuilderNotFound;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IBuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\ABaseTestCase;
+use DDA58\LaravelMySQLHandler\Container\HandlerContainer;
+use DDA58\LaravelMySQLHandler\Container\IHandlerContainer;
+use DDA58\LaravelMySQLHandler\Exceptions\HandlerBuilderNotFound;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IBuilder;
+use DDA58\LaravelMySQLHandler\Tests\ABaseTestCase;
 use Generator;
 use Illuminate\Database\Query\Builder as DbQueryBuilder;
 

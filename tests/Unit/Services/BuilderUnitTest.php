@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\Unit\Services;
+namespace DDA58\LaravelMySQLHandler\Tests\Unit\Services;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\IHandlerContainer;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\ABuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IBuilder;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Grammar\IGrammar;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Processor\IProcessor;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Tests\ABaseTestCase;
+use DDA58\LaravelMySQLHandler\Container\IHandlerContainer;
+use DDA58\LaravelMySQLHandler\Services\Builder\ABuilder;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IBuilder;
+use DDA58\LaravelMySQLHandler\Services\Grammar\IGrammar;
+use DDA58\LaravelMySQLHandler\Services\Processor\IProcessor;
+use DDA58\LaravelMySQLHandler\Tests\ABaseTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class BuilderUnitTest extends ABaseTestCase

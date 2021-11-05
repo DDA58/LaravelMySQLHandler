@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Tests;
+namespace DDA58\LaravelMySQLHandler\Tests;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\HandlerServiceProvider;
+use DDA58\LaravelMySQLHandler\HandlerServiceProvider;
 use Faker\Factory;
 use Faker\Generator;
 use Illuminate\Database\Connectors\MySqlConnector;

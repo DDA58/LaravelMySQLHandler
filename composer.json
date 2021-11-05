@@ -1,5 +1,5 @@
 {
-    "name": "dda58/mysqlhandlerforlaravelquerybuilder",
+    "name": "dda58/laravelmysqlhandler",
     "description": "Allow use MySQL handlers for Laravel query builder",
     "license": "MIT",
     "authors": [
@@ -9,8 +9,8 @@
             "homepage": "https://github.com/DDA58"
         }
     ],
-    "homepage": "https://github.com/dda58/mysqlhandlerforlaravelquerybuilder",
-    "keywords": ["Laravel", "MySQLHandlerForLaravelQueryBuilder"],
+    "homepage": "https://github.com/dda58/laravelmysqlhandler",
+    "keywords": ["Laravel", "MySQLHandlerStatement"],
     "require": {
         "php": "^7.4|^8.0",
         "illuminate/support": ">=5.0",
@@ -23,21 +23,21 @@
     },
     "autoload": {
         "psr-4": {
-            "DDA58\\MySQLHandlerForLaravelQueryBuilder\\": "src/"
+            "DDA58\\LaravelMySQLHandler\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DDA58\\MySQLHandlerForLaravelQueryBuilder\\Tests\\": "tests"
+            "DDA58\\LaravelMySQLHandler\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "DDA58\\MySQLHandlerForLaravelQueryBuilder\\HandlerServiceProvider"
+                "DDA58\\LaravelMySQLHandler\\HandlerServiceProvider"
             ],
             "aliases": {
-                "HandlerManager": "DDA58\\MySQLHandlerForLaravelQueryBuilder\\Facades\\HandlerManager",
+                "HandlerManager": "DDA58\\LaravelMySQLHandler\\Facades\\HandlerManager",
                 "HandlerContainer": "HandlerContainer"
             }
         }

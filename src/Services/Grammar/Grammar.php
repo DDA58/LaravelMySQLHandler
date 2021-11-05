@@ -2,17 +2,16 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Grammar;
+namespace DDA58\LaravelMySQLHandler\Services\Grammar;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\KeywordNeedsIndexValue;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\KeywordNotAllowed;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\KeywordNotAllowedWithoutIndexName;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Exceptions\KeywordNotAllowedForIndexName;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\Interfaces\IBuilder;
+use DDA58\LaravelMySQLHandler\Exceptions\KeywordNeedsIndexValue;
+use DDA58\LaravelMySQLHandler\Exceptions\KeywordNotAllowed;
+use DDA58\LaravelMySQLHandler\Exceptions\KeywordNotAllowedWithoutIndexName;
+use DDA58\LaravelMySQLHandler\Exceptions\KeywordNotAllowedForIndexName;
+use DDA58\LaravelMySQLHandler\Services\Builder\Interfaces\IBuilder;
 
 /**
- * class Grammar
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 class Grammar implements IGrammar
 {

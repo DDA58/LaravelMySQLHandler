@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder;
+namespace DDA58\LaravelMySQLHandler;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\HandlerContainer;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\IHandlerContainer;
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Builder\{EloquentBuilder,
+use DDA58\LaravelMySQLHandler\Container\HandlerContainer;
+use DDA58\LaravelMySQLHandler\Container\IHandlerContainer;
+use DDA58\LaravelMySQLHandler\Services\Builder\{EloquentBuilder,
     Interfaces\IEloquentBuilder,
     Interfaces\IQueryBuilder,
     QueryBuilder};
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\{Grammar\Grammar,
+use DDA58\LaravelMySQLHandler\Services\{Grammar\Grammar,
     Grammar\IGrammar,
     Manager\HandlerManager,
     Manager\IHandlerManager,
@@ -20,8 +20,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * class HandlerServiceProvider
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 class HandlerServiceProvider extends ServiceProvider
 {

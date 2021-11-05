@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Facades;
+namespace DDA58\LaravelMySQLHandler\Facades;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Manager\IHandlerManager;
+use DDA58\LaravelMySQLHandler\Services\Manager\IHandlerManager;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * class HandlerManager
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  * @method static IHandlerManager getFacadeRoot()
  */
 class HandlerManager extends Facade

@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Processor;
+namespace DDA58\LaravelMySQLHandler\Services\Processor;
 
 use Illuminate\Database\Query\Builder as DbBuilder;
 use PDO;
 
 /**
- * class Processor
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 class Processor implements IProcessor
 {

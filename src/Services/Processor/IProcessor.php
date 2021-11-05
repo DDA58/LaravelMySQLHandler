@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Processor;
+namespace DDA58\LaravelMySQLHandler\Services\Processor;
 
 use PDO;
 
 /**
- * Interface IProcessor
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 interface IProcessor
 {

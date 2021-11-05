@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DDA58\MySQLHandlerForLaravelQueryBuilder\Services\Manager;
+namespace DDA58\LaravelMySQLHandler\Services\Manager;
 
-use DDA58\MySQLHandlerForLaravelQueryBuilder\Container\IHandlerContainer;
+use DDA58\LaravelMySQLHandler\Container\IHandlerContainer;
 
 /**
- * Interface IHandlerManager
- * @package DDA58\MySQLHandlerForLaravelQueryBuilder
+ * @package DDA58\LaravelMySQLHandler
  */
 interface IHandlerManager
 {
