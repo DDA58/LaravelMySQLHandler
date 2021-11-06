@@ -1,21 +1,63 @@
 # LaravelMySQLHandler
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
+## Description
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+This package adds [MySQL Handler Statement](https://dev.mysql.com/doc/refman/8.0/en/handler.html) to Laravel based project
 
 ## Installation
 
-Via Composer
+Add repository to the service composer.json file
 
-``` bash
+```json
+"repositories": [
+    {
+        "type": "git",
+        "url": "https://github.com/DDA58/LaravelMySQLHandler"
+    }
+]
+```
+
+And then require `dda58/laravelmysqlhandler` package
+
+```bash
 $ composer require dda58/laravelmysqlhandler
 ```
 
 ## Usage
+
+### Usage by DB facade
+
+```php
+<?php
+
+$handler = DB::table($tableName)->openHandler();
+$result = $handler->readPrimary($indexValue, $keyword)->get();
+$handler->close();
+
+$handler = DB::table($tableName)->openHandler();
+$result = $handler->read($indexName, $indexValue, $keyword)->get();
+$handler->close();
+```
+
+You can also add where, limit and offset to query
+
+```php
+<?php
+
+$handler = DB::table($tableName)->openHandler();
+$result = $handler->where($where)->limit($limit)->offset($offset)->readFirst($indexValue)->get();
+$handler->close();
+```
+
+### Usage by Model
+
+```php
+<?php
+
+$handler = YourModel::openHandler();
+$result = $handler->where($where)->limit($limit)->offset($offset)->readPrev($indexValue)->get();
+$handler->close();
+```
 
 ## Change log
 
@@ -24,7 +66,7 @@ Please see the [changelog](changelog.md) for more information on what has change
 ## Testing
 
 ``` bash
-$ composer test
+$ ./vendor/bin/phpunit tests/
 ```
 
 ## Security
@@ -37,6 +79,6 @@ If you discover any security related issues, please email dda58denisov@gmail.com
 
 ## License
 
-MIT. Please see the [license file](license.md) for more information.
+LaravelMySQLHandler is open-sourced software licensed under the [MIT license](license.md).
 
 [link-author]: https://github.com/dda58

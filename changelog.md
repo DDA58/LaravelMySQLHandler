@@ -1,8 +1,26 @@
 # Changelog
 
-All notable changes to `LaravelMySQLHandler` will be documented in this file.
-
-## Version 1.0
+## Version 2.0.0
 
 ### Added
-- Everything
+- Handler QueryBuilder
+- Handler EloquentBuilder
+- Handler Grammar
+- Handler Container
+- Handler Processor
+- Mass refactoring
+- Unit tests
+- Codesniffer
+- Mass rename
+
+## Version 1.0.1
+
+### Added
+- Remove typos
+
+## Version 1.0.0
+
+### Added
+- MySQLHandlerForLaravelQueryBuilder
+- MySQLHandlerRepository
+- MySQLHandlerForLaravelQueryBuilderServiceProvider
